@@ -1,0 +1,1776 @@
+<h2 id="crossreference" class="list">Cross reference for Transformation - Validation Process Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Transformation - Validation Process Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ApplicationProfile"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile">Application Profile</a>
+      </li>
+      <li>
+         <a href="#Distribution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+      </li>
+      <li>
+         <a href="#Plan"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+      </li>
+      <li>
+         <a href="#RMLMappingScript"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript">RML Mapping Script</a>
+      </li>
+      <li>
+         <a href="#SPARQLQuery"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery">SPARQL Query</a>
+      </li>
+      <li>
+         <a href="#Transformation"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+      </li>
+      <li>
+         <a href="#TransformationExecution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution">Transformation Execution</a>
+      </li>
+      <li>
+         <a href="#TransformationReport"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport">Transformation Report</a>
+      </li>
+      <li>
+         <a href="#TransformationResource"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+      </li>
+      <li>
+         <a href="#Validation"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+      </li>
+      <li>
+         <a href="#ValidationExecution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution">Validation Execution</a>
+      </li>
+      <li>
+         <a href="#ValidationReport"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport">Validation Report</a>
+      </li>
+      <li>
+         <a href="#ValidationResource"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource">Validation Resource</a>
+      </li>
+   </ul>
+   <div class="entity" id="ApplicationProfile">
+      <h3>Application Profile<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile</p>
+      <div class="comment">
+         <span class="markdown">It is a specific type of validation resource including constraints, extensions, combinations checks related to the usage of other standards or specifications.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ValidationResource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource">Validation Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#applicationProfileFilePath"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath">application profile file path</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#applicationProfileName"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName">application profile name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usesStandard"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#usesStandard">uses standard</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Distribution">
+      <h3>Distribution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#Distribution</p>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>It is a DCAT distribution that is defined or is to be generated in a managed manner by means of a transformation or a validation.</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Distribution"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/ns/prov#Entity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Entity">entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isDistributionOf"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf">is distribution of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#declaresOutputDistribution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution">declares output distribution</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hadInputSource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource">had input source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hadSourceToValidate"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate">had source to validate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#representedInDistribution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution">represented in distribution</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Plan">
+      <h3>Plan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#Plan</p>
+      <div class="comment">
+         <span class="markdown">The class extends the prov:Plan in order to express the Transformation and Validation plans defined in this ontology. In general, also according to DOLCE foundational ontology, a plan is a description (entity) that has a goal to be achieved through the execution of set of steps</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Plan"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Plan">plan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Transformation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Validation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#definesRuleIn"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn">defines rule in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#needsExecution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#needsExecution">needs execution</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#includesRuleFor"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor">includes rule for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RMLMappingScript">
+      <h3>RML Mapping Script<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript</p>
+      <div class="comment">
+         <span class="markdown">A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TransformationResource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#SPARQLQuery"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery">SPARQL Query</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SPARQLQuery">
+      <h3>SPARQL Query<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery</p>
+      <div class="comment">
+         <span class="markdown">A specific type of transformation resource that is based on the specification of a set of SPARQL queries. It is through this type of transformation resource that is possible to express with this ontology, transformation rules based on tools such as SPARQL anything - https://github.com/SPARQL-Anything/sparql.anything</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TransformationResource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#RMLMappingScript"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript">RML Mapping Script</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Transformation">
+      <h3>Transformation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#Transformation</p>
+      <div class="comment">
+         <span class="markdown">A planned set of operations intended by one or more agents aiming at converting an input data distribution into an output data distribution conforming to a given set of rules.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Plan"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#declaresOutputDistribution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution">declares output distribution</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#definesTransformationRuleIn"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn">defines transformation rule in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hadInputSource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource">had input source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inputModelDescription"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription">input model description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#outputModelDescription"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription">output model description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#transformsAgainstStandard"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard">transforms against standard</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasTransformationExecutedBy"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy">was transformation executed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#executedTransformation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation">executed transformation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#includesTransformationRuleFor"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor">include transformation rule for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Validation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TransformationExecution">
+      <h3>Transformation Execution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution</p>
+      <div class="comment">
+         <span class="markdown">It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#executedTransformation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation">executed transformation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasTransformationExecutedBy"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy">was transformation executed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ValidationExecution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution">Validation Execution</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TransformationReport">
+      <h3>Transformation Report<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport</p>
+      <div class="comment">
+         <span class="markdown">Any information returned by the TransformationExecution activity,
+e.g; return code or message when the execution was processed without error.</span>
+      </div>
+      <dl>
+         <dt>Previous version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Entity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Entity">entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ValidationReport"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport">Validation Report</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TransformationResource">
+      <h3>Transformation Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource</p>
+      <div class="comment">
+         <span class="markdown">A resource used to define the conversion algorithm.  Examples of transformation resources include an RML script , a SPARQL Query.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Resource"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#RMLMappingScript"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript">RML Mapping Script</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SPARQLQuery"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery">SPARQL Query</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#includesTransformationRuleFor"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor">include transformation rule for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#definesTransformationRuleIn"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn">defines transformation rule in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#ValidationResource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource">Validation Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Validation">
+      <h3>Validation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#Validation</p>
+      <div class="comment">
+         <span class="markdown">A planned set of operations intended by one or more agents aiming at checking conformance against a given set of rules of a source to validate data distribution. Examples include compliance to standards, compliance to business rules</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Plan"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#definesValidationRuleIn"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn">defines validation rule in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hadSourceToValidate"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate">had source to validate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasValidationExecutedBy"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy">was validation executed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#executedValidation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#executedValidation">executed validation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#includesValidationRuleFor"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor">includes validation rule for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Transformation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ValidationExecution">
+      <h3>Validation Execution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution</p>
+      <div class="comment">
+         <span class="markdown">It is an activity that carries out a validation over a period of time actually checking whether data of the input source is valid with respect to defined conformance checks.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Activity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#executedValidation"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#executedValidation">executed validation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasValidationExecutedBy"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy">was validation executed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#TransformationExecution"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution">Transformation Execution</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ValidationReport">
+      <h3>Validation Report<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport</p>
+      <div class="comment">
+         <span class="markdown">Information returned by the ValidationExecution activity
+e.g; message when the execution was processed without error, a full report of errors and/or warnings according to the severity of the conformance checks and the possible violations in the data.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/prov#Entity"
+               target="_blank"
+               title="http://www.w3.org/ns/prov#Entity">entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#TransformationReport"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport">Transformation Report</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ValidationResource">
+      <h3>Validation Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource</p>
+      <div class="comment">
+         <span class="markdown">A resource used to define a conformance check. Examples include a SHACL Shape file, schematron</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Resource"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ApplicationProfile"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile">Application Profile</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#includesValidationRuleFor"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor">includes validation rule for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#definesValidationRuleIn"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn">defines validation rule in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#TransformationResource"
+               title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#declaresOutputDistribution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution">declares output distribution</a>
+      </li>
+      <li>
+         <a href="#definesRuleIn"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn">defines rule in</a>
+      </li>
+      <li>
+         <a href="#definesTransformationRuleIn"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn">defines transformation rule in</a>
+      </li>
+      <li>
+         <a href="#definesValidationRuleIn"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn">defines validation rule in</a>
+      </li>
+      <li>
+         <a href="#executedTransformation"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation">executed transformation</a>
+      </li>
+      <li>
+         <a href="#executedValidation"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#executedValidation">executed validation</a>
+      </li>
+      <li>
+         <a href="#hadInputSource"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource">had input source</a>
+      </li>
+      <li>
+         <a href="#hadSourceToValidate"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate">had source to validate</a>
+      </li>
+      <li>
+         <a href="#includesTransformationRuleFor"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor">include transformation rule for</a>
+      </li>
+      <li>
+         <a href="#includesRuleFor"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor">includes rule for</a>
+      </li>
+      <li>
+         <a href="#includesValidationRuleFor"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor">includes validation rule for</a>
+      </li>
+      <li>
+         <a href="#isDistributionOf"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf">is distribution of</a>
+      </li>
+      <li>
+         <a href="#representedInDistribution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution">represented in distribution</a>
+      </li>
+      <li>
+         <a href="#transformsAgainstStandard"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard">transforms against standard</a>
+      </li>
+      <li>
+         <a href="#usesStandard"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#usesStandard">uses standard</a>
+      </li>
+      <li>
+         <a href="#wasTransformationExecutedBy"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy">was transformation executed by</a>
+      </li>
+      <li>
+         <a href="#wasValidationExecutedBy"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy">was validation executed by</a>
+      </li>
+   </ul>
+   <div class="entity" id="declaresOutputDistribution">
+      <h3>declares output distribution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution</p>
+      <div class="comment">
+         <span class="markdown">Association that defines the target into which the input distribution is converted to.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Distribution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="definesRuleIn">
+      <h3>defines rule in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn</p>
+      <div class="comment">
+         <span class="markdown">Abstract association to resource needed in the plan</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#definesTransformationRuleIn"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn">defines transformation rule in</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#definesValidationRuleIn"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn">defines validation rule in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Plan"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#includesRuleFor"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor">includes rule for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="definesTransformationRuleIn">
+      <h3>defines transformation rule in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn</p>
+      <div class="comment">
+         <span class="markdown">Specialisation of definesRuleIn property that represents the association to resource used to specify the conversion algorithm</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#definesRuleIn"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn">defines rule in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TransformationResource"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="definesValidationRuleIn">
+      <h3>defines validation rule in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn</p>
+      <div class="comment">
+         <span class="markdown">Specialisation of the definesRuleIn property that represents the association of the validation to resource that specifies the conformance check algorithm</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#definesRuleIn"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn">defines rule in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Validation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ValidationResource"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource">Validation Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="executedTransformation">
+      <h3>executed transformation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation</p>
+      <div class="comment">
+         <span class="markdown">Association to the planned transformation which occurred</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#used"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#used">used</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TransformationExecution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution">Transformation Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasTransformationExecutedBy"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy">was transformation executed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="executedValidation">
+      <h3>executed validation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#executedValidation</p>
+      <div class="comment">
+         <span class="markdown">Association to the planned validation which occurred</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#used"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#used">used</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ValidationExecution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution">Validation Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Validation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasValidationExecutedBy"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy">was validation executed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hadInputSource">
+      <h3>had input source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource</p>
+      <div class="comment">
+         <span class="markdown">Association that defines a distribution of the data source to be transformed</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#hadPrimarySource"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#hadPrimarySource">had primary source</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Distribution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hadSourceToValidate">
+      <h3>had source to validate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate</p>
+      <div class="comment">
+         <span class="markdown">Association to the distribution of the data source to go through a conformance check</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#hadPrimarySource"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#hadPrimarySource">had primary source</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Validation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Distribution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="includesTransformationRuleFor">
+      <h3>include transformation rule for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor</p>
+      <div class="comment">
+         <span class="markdown">A specialisation of the abstract property includesRuleFor, that associates a resource to the related transformation plan that make use of it.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#includesRuleFor"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor">includes rule for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TransformationResource"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource">Transformation Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="includesRuleFor">
+      <h3>includes rule for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor</p>
+      <div class="comment">
+         <span class="markdown">Abstract inverse association of definesRuleIn that associates a resource to plans that make use of it</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#includesTransformationRuleFor"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor">include transformation rule for</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#includesValidationRuleFor"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor">includes validation rule for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Plan"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#definesRuleIn"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn">defines rule in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="includesValidationRuleFor">
+      <h3>includes validation rule for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor</p>
+      <div class="comment">
+         <span class="markdown">A specialisation of the abstract property includesRuleFor, that associates a resource to the related validation plan that make use of it.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#includesRuleFor"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor">includes rule for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ValidationResource"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource">Validation Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Validation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDistributionOf">
+      <h3>is distribution of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf</p>
+      <div class="comment">
+         <span class="markdown">The property that links a Distribution to the related Dataset.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Distribution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Dataset"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Dataset">dataset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="representedInDistribution">
+      <h3>represented in distribution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution</p>
+      <div class="comment">
+         <span class="markdown">Association that expresses the distribution in which the trasformation and validation report are represented.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TransformationReport"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport">Transformation Report</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#ValidationReport"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport">Validation Report</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Distribution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Distribution">Distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="transformsAgainstStandard">
+      <h3>transforms against standard<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard</p>
+      <div class="comment">
+         <span class="markdown">Association identifying the standard targeted by a transformation</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Ontology"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Ontology">ontology</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usesStandard">
+      <h3>uses standard<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#usesStandard</p>
+      <div class="comment">
+         <span class="markdown">Association that link the Application Profile to the standard it uses for the definition of the conformance checks</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationProfile"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile">Application Profile</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Ontology"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Ontology">ontology</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasTransformationExecutedBy">
+      <h3>was transformation executed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy</p>
+      <div class="comment">
+         <span class="markdown">Association to a TransformationExecution that occurred for a planned transformation.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#wasUsedBy"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#wasUsedBy">was used by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TransformationExecution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution">Transformation Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#executedTransformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation">executed transformation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasValidationExecutedBy">
+      <h3>was validation executed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy</p>
+      <div class="comment">
+         <span class="markdown">Association to a ValidationExecution that occurred for a planned validation.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/prov#wasUsedBy"
+                  target="_blank"
+                  title="http://www.w3.org/ns/prov#wasUsedBy">was used by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Validation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Validation">Validation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ValidationExecution"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution">Validation Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#executedValidation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#executedValidation">executed validation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#applicationProfileFilePath"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath">application profile file path</a>
+      </li>
+      <li>
+         <a href="#applicationProfileName"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName">application profile name</a>
+      </li>
+      <li>
+         <a href="#inputModelDescription"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription">input model description</a>
+      </li>
+      <li>
+         <a href="#needsExecution"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#needsExecution">needs execution</a>
+      </li>
+      <li>
+         <a href="#outputModelDescription"
+            title="https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription">output model description</a>
+      </li>
+   </ul>
+   <div class="entity" id="applicationProfileFilePath">
+      <h3>application profile file path<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath</p>
+      <div class="comment">
+         <span class="markdown">The indication of the file path where to locate the validation resource of type application profile</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationProfile"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile">Application Profile</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="applicationProfileName">
+      <h3>application profile name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName</p>
+      <div class="comment">
+         <span class="markdown">The name of the validation resource of type application profile</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>unstable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationProfile"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile">Application Profile</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputModelDescription">
+      <h3>input model description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription</p>
+      <div class="comment">
+         <span class="markdown">A written account of the input model of the transformation plan.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="needsExecution">
+      <h3>needs execution<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#needsExecution</p>
+      <div class="comment">
+         <span class="markdown">A boolean property that indicates whether a plan needs to be executed</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Plan"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="outputModelDescription">
+      <h3>output model description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription</p>
+      <div class="comment">
+         <span class="markdown">A written account of the output model of the transformation plan.</span>
+      </div>
+      <dl>
+         <dt>Current version:
+        </dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://data.europa.eu/m8g/transform-validate-ontology">https://data.europa.eu/m8g/transform-validate-ontology</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Transformation"
+                  title="https://data.europa.eu/m8g/transform-validate-ontology#Transformation">Transformation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+            <span>license</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/license">
+      <h3>license<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

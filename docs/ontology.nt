@@ -1,0 +1,517 @@
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://data.europa.eu/m8g/transform-validate-ontology/0.1> .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://purl.org/dc/terms/title> "Transformation - Validation Process Ontology"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation - Validation Process Ontology"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1 - Ontology creation and refinement"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasUsedBy
+<http://www.w3.org/ns/prov#wasUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Association that defines the target into which the input distribution is converted to."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "declares output distribution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Resource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract association to resource needed in the plan"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2000/01/rdf-schema#label> "defines rule in"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of definesRuleIn property that represents the association to resource used to specify the conversion algorithm"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2000/01/rdf-schema#label> "defines transformation rule in"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of the definesRuleIn property that represents the association of the validation to resource that specifies the conformance check algorithm"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2000/01/rdf-schema#label> "defines validation rule in"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2002/07/owl#inverseOf> <https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Association to the planned transformation which occurred"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2000/01/rdf-schema#label> "executed transformation"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#executedValidation
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#used> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2002/07/owl#inverseOf> <https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#comment> "Association to the planned validation which occurred"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2000/01/rdf-schema#label> "executed validation"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#hadPrimarySource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Association that defines a distribution of the data source to be transformed"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2000/01/rdf-schema#label> "had input source"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#hadPrimarySource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#comment> "Association to the distribution of the data source to go through a conformance check"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2000/01/rdf-schema#label> "had source to validate"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract inverse association of definesRuleIn that associates a resource to plans that make use of it"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2000/01/rdf-schema#label> "includes rule for"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#comment> "A specialisation of the abstract property includesRuleFor, that associates a resource to the related transformation plan that make use of it."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2000/01/rdf-schema#label> "include transformation rule for"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#comment> "A specialisation of the abstract property includesRuleFor, that associates a resource to the related validation plan that make use of it."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2000/01/rdf-schema#label> "includes validation rule for"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that links a Distribution to the related Dataset."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is distribution of"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Association that expresses the distribution in which the trasformation and validation report are represented."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "represented in distribution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "Association identifying the standard targeted by a transformation"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2000/01/rdf-schema#label> "transforms against standard"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#usesStandard
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "Association that link the Application Profile to the standard it uses for the definition of the conformance checks"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2000/01/rdf-schema#label> "uses standard"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasUsedBy> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Association to a TransformationExecution that occurred for a planned transformation."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was transformation executed by"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasUsedBy> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Association to a ValidationExecution that occurred for a planned validation."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was validation executed by"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2000/01/rdf-schema#comment> "The indication of the file path where to locate the validation resource of type application profile"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "application profile file path"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the validation resource of type application profile"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2000/01/rdf-schema#label> "application profile name"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A written account of the input model of the transformation plan."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2000/01/rdf-schema#label> "input model description"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#needsExecution
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean property that indicates whether a plan needs to be executed"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2000/01/rdf-schema#label> "needs execution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A written account of the output model of the transformation plan."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2000/01/rdf-schema#label> "output model description"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Ontology
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Plan
+<http://www.w3.org/ns/prov#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#usesStandard> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/modified> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a specific type of validation resource including constraints, extensions, combinations checks related to the usage of other standards or specifications."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Application Profile"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#Distribution
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2002/07/owl#versionInfo> "It is a DCAT distribution that is defined or is to be generated in a managed manner by means of a transformation or a validation."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Distribution> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#Plan
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#needsExecution> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "The class extends the prov:Plan in order to express the Transformation and Validation plans defined in this ontology. In general, also according to DOLCE foundational ontology, a plan is a description (entity) that has a goal to be achieved through the execution of set of steps"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Plan> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2002/07/owl#disjointWith> <https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2000/01/rdf-schema#label> "RML Mapping Script"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific type of transformation resource that is based on the specification of a set of SPARQL queries. It is through this type of transformation resource that is possible to express with this ontology, transformation rules based on tools such as SPARQL anything - https://github.com/SPARQL-Anything/sparql.anything"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL Query"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#Transformation
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.europa.eu/m8g/transform-validate-ontology#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2002/07/owl#disjointWith> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned set of operations intended by one or more agents aiming at converting an input data distribution into an output data distribution conforming to a given set of rules."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Transformation> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Transformation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2002/07/owl#disjointWith> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation Execution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2002/07/owl#disjointWith> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Any information returned by the TransformationExecution activity,\ne.g; return code or message when the execution was processed without error."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation Report"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport> <http://www.w3.org/2002/07/owl#priorVersion> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/modified> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2002/07/owl#disjointWith> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource used to define the conversion algorithm.  Examples of transformation resources include an RML script , a SPARQL Query."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation Resource"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource> <http://www.w3.org/2002/07/owl#versionInfo> "stable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#Validation
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.europa.eu/m8g/transform-validate-ontology#Plan> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution> .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Distribution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned set of operations intended by one or more agents aiming at checking conformance against a given set of rules of a source to validate data distribution. Examples include compliance to standards, compliance to business rules"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2000/01/rdf-schema#label> "Validation"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#Validation> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#executedValidation> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "It is an activity that carries out a validation over a period of time actually checking whether data of the input source is valid with respect to defined conformance checks."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Execution"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Information returned by the ValidationExecution activity\ne.g; message when the execution was processed without error, a full report of errors and/or warnings according to the severity of the conformance checks and the possible violations in the data."@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Report"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://data.europa.eu/m8g/transform-validate-ontology#Validation> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource used to define a conformance check. Examples include a SHACL Shape file, schematron"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.europa.eu/m8g/transform-validate-ontology> .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2000/01/rdf-schema#label> "Validation Resource"@en .
+<https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource> <http://www.w3.org/2002/07/owl#versionInfo> "unstable"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
