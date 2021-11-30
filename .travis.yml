@@ -1,0 +1,13 @@
+before_install:
+  - wget https://github.com/dgarijo/Widoco/releases/download/v1.4.13/widoco-1.4.15-jar-with-dependencies.jar -O widoco.jar
+script:
+  - java -jar widoco.jar -ontFile ontology.rdf -outFolder . -includeImportedOntologies -includeAnnotationProperties
+  - rm readme.md
+  - ln -s index-en.html index.html
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: master
