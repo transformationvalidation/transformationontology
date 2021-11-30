@@ -1,0 +1,544 @@
+@prefix : <https://data.europa.eu/m8g/transform-validate-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <https://data.europa.eu/m8g/transform-validate-ontology> .
+
+<https://data.europa.eu/m8g/transform-validate-ontology> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://data.europa.eu/m8g/transform-validate-ontology/0.1> ;
+                                                          terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                          rdfs:comment "This is the ontology that supports transformation and validation processes of datasets available in some catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV."@en ;
+                                                          rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                                                          rdfs:label "Transformation/Validation Process Ontology"@en ;
+                                                          owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasUsedBy
+<http://www.w3.org/ns/prov#wasUsedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#declaresOutputDistribution
+:declaresOutputDistribution rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Transformation ;
+                            rdfs:range :Distribution ;
+                            rdfs:comment "Association that defines the target into which the input distribution is converted to."@en ;
+                            rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                            rdfs:label "declares output distribution"@en ;
+                            owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#definesRuleIn
+:definesRuleIn rdf:type owl:ObjectProperty ;
+               owl:inverseOf :includesRuleFor ;
+               rdfs:domain :Plan ;
+               rdfs:range <http://www.w3.org/ns/dcat#Resource> ;
+               rdfs:comment "Abstract association to resource needed in the plan"@en ;
+               rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+               rdfs:label "defines rule in"@en ;
+               owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#definesTransformationRuleIn
+:definesTransformationRuleIn rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :definesRuleIn ;
+                             rdfs:domain :Transformation ;
+                             rdfs:range :TransformationResource ;
+                             rdfs:comment "Specialisation of definesRuleIn property that represents the association to resource used to specify the conversion algorithm"@en ;
+                             rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                             rdfs:label "defines transformation rule in"@en ;
+                             owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#definesValidationRuleIn
+:definesValidationRuleIn rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :definesRuleIn ;
+                         rdfs:domain :Validation ;
+                         rdfs:range :ValidationResource ;
+                         rdfs:comment "Specialisation of the definesRuleIn property that represents the association of the validation to resource that specifies the conformance check algorithm"@en ;
+                         rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                         rdfs:label "defines validation rule in"@en ;
+                         owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#executedTransformation
+:executedTransformation rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+                        owl:inverseOf :wasTransformationExecutedBy ;
+                        rdfs:domain :TransformationExecution ;
+                        rdfs:range :Transformation ;
+                        rdfs:comment "Association to the planned transformation which occurred"@en ;
+                        rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                        rdfs:label "executed transformation"@en ;
+                        owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#executedValidation
+:executedValidation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+                    owl:inverseOf :wasValidationExecutedBy ;
+                    rdfs:domain :ValidationExecution ;
+                    rdfs:range :Validation ;
+                    rdfs:comment "Association to the planned validation which occurred"@en ;
+                    rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                    rdfs:label "executed validation"@en ;
+                    owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#hadInputSource
+:hadInputSource rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadPrimarySource> ;
+                rdfs:domain :Transformation ;
+                rdfs:range :Distribution ;
+                rdfs:comment "Association that defines a distribution of the data source to be transformed"@en ;
+                rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                rdfs:label "had input source"@en ;
+                owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#hadSourceToValidate
+:hadSourceToValidate rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadPrimarySource> ;
+                     rdfs:domain :Validation ;
+                     rdfs:range :Distribution ;
+                     rdfs:comment "Association to the distribution of the data source to go through a conformance check"@en ;
+                     rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                     rdfs:label "had source to validate"@en ;
+                     owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#includesRuleFor
+:includesRuleFor rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://www.w3.org/ns/dcat#Resource> ;
+                 rdfs:range :Plan ;
+                 rdfs:comment "Abstract inverse association of definesRuleIn that associates a resource to plans that make use of it"@en ;
+                 rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                 rdfs:label "includes rule for"@en ;
+                 owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#includesTransformationRuleFor
+:includesTransformationRuleFor rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :includesRuleFor ;
+                               rdfs:domain :TransformationResource ;
+                               rdfs:range :Transformation ;
+                               rdfs:comment "A specialisation of the abstract property includesRuleFor, that associates a resource to the related transformation plan that make use of it."@en ;
+                               rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                               rdfs:label "include transformation rule for"@en ;
+                               owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#includesValidationRuleFor
+:includesValidationRuleFor rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :includesRuleFor ;
+                           rdfs:domain :ValidationResource ;
+                           rdfs:range :Validation ;
+                           rdfs:comment "A specialisation of the abstract property includesRuleFor, that associates a resource to the related validation plan that make use of it."@en ;
+                           rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                           rdfs:label "includes validation rule for"@en ;
+                           owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#isDistributionOf
+:isDistributionOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Distribution ;
+                  rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                  rdfs:comment "The property that links a Distribution to the related Dataset."@en ;
+                  rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                  rdfs:label "is distribution of"@en ;
+                  owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#representedInDistribution
+:representedInDistribution rdf:type owl:ObjectProperty ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( :TransformationReport
+                                                       :ValidationReport
+                                                     )
+                                       ] ;
+                           rdfs:range :Distribution ;
+                           rdfs:comment "Association that expresses the distribution in which the trasformation and validation report are represented."@en ;
+                           rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                           rdfs:label "represented in distribution"@en ;
+                           owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#transformsAgainstStandard
+:transformsAgainstStandard rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Transformation ;
+                           rdfs:range owl:Ontology ;
+                           rdfs:comment "Association identifying the standard targeted by a transformation"@en ;
+                           rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                           rdfs:label "transforms against standard"@en ;
+                           owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#usesStandard
+:usesStandard rdf:type owl:ObjectProperty ;
+              rdfs:domain :ApplicationProfile ;
+              rdfs:range owl:Ontology ;
+              rdfs:comment "Association that link the Application Profile to the standard it uses for the definition of the conformance checks"@en ;
+              rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+              rdfs:label "uses standard"@en ;
+              owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#wasTransformationExecutedBy
+:wasTransformationExecutedBy rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasUsedBy> ;
+                             rdfs:domain :Transformation ;
+                             rdfs:range :TransformationExecution ;
+                             rdfs:comment "Association to a TransformationExecution that occurred for a planned transformation."@en ;
+                             rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                             rdfs:label "was transformation executed by"@en ;
+                             owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#wasValidationExecutedBy
+:wasValidationExecutedBy rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasUsedBy> ;
+                         rdfs:domain :Validation ;
+                         rdfs:range :ValidationExecution ;
+                         rdfs:comment "Association to a ValidationExecution that occurred for a planned validation."@en ;
+                         rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                         rdfs:label "was validation executed by"@en ;
+                         owl:versionInfo "unstable"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/modified
+terms:modified rdf:type owl:DatatypeProperty .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileFilePath
+:applicationProfileFilePath rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :ApplicationProfile ;
+                            rdfs:range rdfs:Literal ;
+                            rdfs:comment "The indication of the file path where to locate the validation resource of type application profile"@en ;
+                            rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                            rdfs:label "application profile file path"@en ;
+                            owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#applicationProfileName
+:applicationProfileName rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :ApplicationProfile ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "The name of the validation resource of type application profile"@en ;
+                        rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                        rdfs:label "application profile name"@en ;
+                        owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#inputModelDescription
+:inputModelDescription rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Transformation ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "A written account of the input model of the transformation plan."@en ;
+                       rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                       rdfs:label "input model description"@en ;
+                       owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#needsExecution
+:needsExecution rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Plan ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "A boolean property that indicates whether a plan needs to be executed"@en ;
+                rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                rdfs:label "needs execution"@en ;
+                owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#outputModelDescription
+:outputModelDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Transformation ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "A written account of the output model of the transformation plan."@en ;
+                        rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                        rdfs:label "output model description"@en ;
+                        owl:versionInfo "stable"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Ontology
+owl:Ontology rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Plan
+<http://www.w3.org/ns/prov#Plan> rdf:type owl:Class .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile
+:ApplicationProfile rdf:type owl:Class ;
+                    rdfs:subClassOf :ValidationResource ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :usesStandard ;
+                                      owl:someValuesFrom owl:Ontology
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :applicationProfileName ;
+                                      owl:allValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty terms:modified ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:date
+                                    ] ;
+                    rdfs:comment "It is a specific type of validation resource including constraints, extensions, combinations checks related to the usage of other standards or specifications."@en ;
+                    rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                    rdfs:label "Application Profile"@en ;
+                    owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#Distribution
+:Distribution rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution> ,
+                              <http://www.w3.org/ns/prov#Entity> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :TransformationExecution
+                                                                  :ValidationExecution
+                                                                )
+                                                  ]
+                              ] ;
+              rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+              rdfs:label "Distribution"@en ;
+              owl:versionInfo "It is a DCAT distribution that is defined or is to be generated in a managed manner by means of a transformation or a validation."@en ,
+                              "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#Plan
+:Plan rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/prov#Plan> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :needsExecution ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:boolean
+                      ] ;
+      rdfs:comment "The class extends the prov:Plan in order to express the Transformation and Validation plans defined in this ontology. In general, also according to DOLCE foundational ontology, a plan is a description (entity) that has a goal to be achieved through the execution of set of steps"@en ;
+      rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+      rdfs:label "Plan"@en ;
+      owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript
+:RMLMappingScript rdf:type owl:Class ;
+                  rdfs:subClassOf :TransformationResource ;
+                  owl:disjointWith :SPARQLQuery ;
+                  rdfs:comment "A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies."@en ;
+                  rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                  rdfs:label "RML Mapping Script"@en ;
+                  owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery
+:SPARQLQuery rdf:type owl:Class ;
+             rdfs:subClassOf :TransformationResource ;
+             rdfs:comment "A specific type of transformation resource that is based on the specification of a set of SPARQL queries. It is through this type of transformation resource that is possible to express with this ontology, transformation rules based on tools such as SPARQL anything - https://github.com/SPARQL-Anything/sparql.anything"@en ;
+             rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+             rdfs:label "SPARQL Query"@en ;
+             owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#Transformation
+:Transformation rdf:type owl:Class ;
+                rdfs:subClassOf :Plan ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :declaresOutputDistribution ;
+                                  owl:someValuesFrom :Distribution
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :definesTransformationRuleIn ;
+                                  owl:someValuesFrom :TransformationResource
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hadInputSource ;
+                                  owl:someValuesFrom :Distribution
+                                ] ;
+                owl:disjointWith :Validation ;
+                rdfs:comment "A planned set of operations intended by one or more agents aiming at converting an input data distribution into an output data distribution conforming to a given set of rules."@en ;
+                rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                rdfs:label "Transformation"@en ;
+                owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution
+:TransformationExecution rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :executedTransformation ;
+                                           owl:allValuesFrom :Transformation
+                                         ] ;
+                         owl:disjointWith :ValidationExecution ;
+                         rdfs:comment "It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution."@en ;
+                         rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                         rdfs:label "Transformation Execution"@en ;
+                         owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#TransformationReport
+:TransformationReport rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                        owl:allValuesFrom :TransformationExecution
+                                      ] ;
+                      owl:disjointWith :ValidationReport ;
+                      rdfs:comment """Any information returned by the TransformationExecution activity,
+e.g; return code or message when the execution was processed without error."""@en ;
+                      rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                      rdfs:label "Transformation Report"@en ;
+                      owl:priorVersion "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource
+:TransformationResource rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty terms:modified ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:date
+                                        ] ;
+                        owl:disjointWith :ValidationResource ;
+                        rdfs:comment "A resource used to define the conversion algorithm.  Examples of transformation resources include an RML script , a SPARQL Query."@en ;
+                        rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                        rdfs:label "Transformation Resource"@en ;
+                        owl:versionInfo "stable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#Validation
+:Validation rdf:type owl:Class ;
+            rdfs:subClassOf :Plan ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :definesValidationRuleIn ;
+                              owl:someValuesFrom :ValidationResource
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hadSourceToValidate ;
+                              owl:someValuesFrom :Distribution
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :declaresOutputDistribution ;
+                              owl:allValuesFrom :Distribution
+                            ] ;
+            rdfs:comment "A planned set of operations intended by one or more agents aiming at checking conformance against a given set of rules of a source to validate data distribution. Examples include compliance to standards, compliance to business rules"@en ;
+            rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+            rdfs:label "Validation"@en ;
+            owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution
+:ValidationExecution rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :executedValidation ;
+                                       owl:allValuesFrom :Validation
+                                     ] ;
+                     rdfs:comment "It is an activity that carries out a validation over a period of time actually checking whether data of the input source is valid with respect to defined conformance checks."@en ;
+                     rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                     rdfs:label "Validation Execution"@en ;
+                     owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#ValidationReport
+:ValidationReport rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                    owl:allValuesFrom :ValidationExecution
+                                  ] ;
+                  rdfs:comment """Information returned by the ValidationExecution activity
+e.g; message when the execution was processed without error, a full report of errors and/or warnings according to the severity of the conformance checks and the possible violations in the data."""@en ;
+                  rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                  rdfs:label "Validation Report"@en ;
+                  owl:versionInfo "unstable"@en .
+
+
+###  https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource
+:ValidationResource rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :includesValidationRuleFor ;
+                                      owl:allValuesFrom :Validation
+                                    ] ;
+                    rdfs:comment "A resource used to define a conformance check. Examples include a SHACL Shape file, schematron"@en ;
+                    rdfs:isDefinedBy <https://data.europa.eu/m8g/transform-validate-ontology> ;
+                    rdfs:label "Validation Resource"@en ;
+                    owl:versionInfo "unstable"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
