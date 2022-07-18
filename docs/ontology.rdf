@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://data.europa.eu/m8g/transform-validate-ontology#"
      xml:base="https://data.europa.eu/m8g/transform-validate-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,12 +10,12 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://data.europa.eu/m8g/transform-validate-ontology">
         <owl:versionIRI rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology/0.1"/>
+        <dc:description xml:lang="en">This is the ontology that supports transformation and validation processes of datasets available in data catalogues. The instances of the ontology are declarative descriptions used by a workflow engine. The workflow engine orchestrates tasks based on these declarative descriptions, aiming at transforming input datasets into the desired representation. The ontology extends existing W3C Web Recommendations such as DCAT and PROV.![image](ontology.png)</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title xml:lang="en">Transformation - Validation Process Ontology</terms:title>
-        <rdfs:comment xml:lang="en">This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O.![image](ontology.png)</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology that supports transformation and validation processes of datasets available in data catalogues. The instances of the ontology are declarative descriptions used by a workflow engine. The workflow engine orchestrates tasks based on these declarative descriptions, aiming at transforming input datasets into the desired representation. The ontology extends existing W3C Web Recommendations such as DCAT and PROV.![image](ontology.png)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology"/>
-        <rdfs:label xml:lang="en">Transformation - Validation Process Ontology</rdfs:label>
-        <owl:versionInfo xml:lang="en">0.1 - Ontology creation and refinement</owl:versionInfo>
+        <rdfs:label xml:lang="en">Transformation/Validation Process Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">0.1 - with some small revisions in a restriction and in a rdfs:comment after the submission of a paper to ISWC</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,17 +32,17 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -619,7 +620,7 @@
     <owl:Class rdf:about="https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript">
         <rdfs:subClassOf rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology#TransformationResource"/>
         <owl:disjointWith rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology#SPARQLQuery"/>
-        <rdfs:comment xml:lang="en">A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A specific type of transformation resource represented by an RML mapping file. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules in files (the resources that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology"/>
         <rdfs:label xml:lang="en">RML Mapping Script</rdfs:label>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
@@ -684,7 +685,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology#ValidationExecution"/>
-        <rdfs:comment xml:lang="en">It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution. It inherits the prov:startedAtTime and prov:endedAtTime properties of the class prov:Activity in order to specify when the activity started and ended.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology"/>
         <rdfs:label xml:lang="en">Transformation Execution</rdfs:label>
         <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
@@ -722,7 +723,7 @@ e.g; return code or message when the execution was processed without error.</rdf
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/dc/terms/modified"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology#ValidationResource"/>

@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross reference for Transformation - Validation Process Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Transformation - Validation Process Ontology.
+<h2 id="crossreference" class="list">Cross reference for Transformation/Validation Process Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Transformation/Validation Process Ontology.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -206,7 +206,7 @@ This section provides details for each class and property defined by Transformat
       <p>
          <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#RMLMappingScript</p>
       <div class="comment">
-         <span class="markdown">A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies.</span>
+         <span class="markdown">A specific type of transformation resource represented by an RML mapping file. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules in files (the resources that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies.</span>
       </div>
       <dl>
          <dt>Current version:
@@ -340,7 +340,7 @@ This section provides details for each class and property defined by Transformat
       <p>
          <strong>IRI:</strong> https://data.europa.eu/m8g/transform-validate-ontology#TransformationExecution</p>
       <div class="comment">
-         <span class="markdown">It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution.</span>
+         <span class="markdown">It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution. It inherits the prov:startedAtTime and prov:endedAtTime properties of the class prov:Activity in order to specify when the activity started and ended.</span>
       </div>
       <dl>
          <dt>Current version:
@@ -1739,16 +1739,24 @@ e.g; message when the execution was processed without error, a full report of er
    <h3 id="annotationproperties" class="list">Annotation Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
             <span>license</span>
          </a>
       </li>
-      <li>
-         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
-            <span>title</span>
-         </a>
-      </li>
    </ul>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+   </div>
    <div class="entity" id="http://purl.org/dc/terms/license">
       <h3>license<sup class="type-ap" title="annotation property">ap</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
@@ -1756,14 +1764,6 @@ e.g; message when the execution was processed without error, a full report of er
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
-   </div>
-   <div class="entity" id="http://purl.org/dc/terms/title">
-      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

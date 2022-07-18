@@ -3,6 +3,5 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <https://data.europa.eu/m8g/transform-validate-ontology/0.1> a prov:Entity;
-	 dc:title "Transformation - Validation Process Ontology";
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .

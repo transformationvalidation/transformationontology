@@ -70,7 +70,7 @@
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/dc/terms/modified"
@@ -184,14 +184,14 @@
     } ]
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
@@ -240,30 +240,30 @@
 }, {
   "@id" : "https://data.europa.eu/m8g/transform-validate-ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "This is the ontology that supports transformation and validation processes of datasets available in data catalogues. The instances of the ontology are declarative descriptions used by a workflow engine. The workflow engine orchestrates tasks based on these declarative descriptions, aiming at transforming input datasets into the desired representation. The ontology extends existing W3C Web Recommendations such as DCAT and PROV.![image](ontology.png)"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "Transformation - Validation Process Ontology"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O.![image](ontology.png)"
+    "@value" : "This is the ontology that supports transformation and validation processes of datasets available in data catalogues. The instances of the ontology are declarative descriptions used by a workflow engine. The workflow engine orchestrates tasks based on these declarative descriptions, aiming at transforming input datasets into the desired representation. The ontology extends existing W3C Web Recommendations such as DCAT and PROV.![image](ontology.png)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Transformation - Validation Process Ontology"
+    "@value" : "Transformation/Validation Process Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology/0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "0.1 - Ontology creation and refinement"
+    "@value" : "0.1 - with some small revisions in a restriction and in a rdfs:comment after the submission of a paper to ISWC"
   } ]
 }, {
   "@id" : "https://data.europa.eu/m8g/transform-validate-ontology#ApplicationProfile",
@@ -344,7 +344,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A specific type of transformation resource represented by an RML script. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules (the resource that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies."
+    "@value" : "A specific type of transformation resource represented by an RML mapping file. RML - RDF Mapping Language is a generic mapping language, based on and extending the standard R2RML  Through RML it is possible to express customized mapping rules in files (the resources that defines the transformation algorithm) from heterogeneous data structures and serializations to the RDF data model according to some ontologies."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
@@ -419,7 +419,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution."
+    "@value" : "It is an activity that carries out a transformation over a period of time actually converting the data of the transformation input source distribution into data then included in a output distribution. It inherits the prov:startedAtTime and prov:endedAtTime properties of the class prov:Activity in order to specify when the activity started and ended."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
@@ -445,7 +445,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Any information returned by the TransformationExecution activity,\ne.g; return code or message when the execution was processed without error."
+    "@value" : "Any information returned by the TransformationExecution activity,\r\ne.g; return code or message when the execution was processed without error."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
@@ -547,7 +547,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Information returned by the ValidationExecution activity\ne.g; message when the execution was processed without error, a full report of errors and/or warnings according to the severity of the conformance checks and the possible violations in the data."
+    "@value" : "Information returned by the ValidationExecution activity\r\ne.g; message when the execution was processed without error, a full report of errors and/or warnings according to the severity of the conformance checks and the possible violations in the data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
