@@ -11,7 +11,7 @@
         <owl:versionIRI rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology/0.1"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="en">Transformation - Validation Process Ontology</terms:title>
-        <rdfs:comment xml:lang="en">This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O.![image](ontology.png)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://data.europa.eu/m8g/transform-validate-ontology"/>
         <rdfs:label xml:lang="en">Transformation - Validation Process Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">0.1 - Ontology creation and refinement</owl:versionInfo>

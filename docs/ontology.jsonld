@@ -249,7 +249,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O."
+    "@value" : "This is the ontology that supports transformation and validation processes of datasets available in some data catalogues. The ontology can be used to guide the automation of a workflow that enables anyone to run transformations, validations and possibly data update management processes. The ontology re-uses existing W3C Web recommendations such as DCAT and PROV-O.![image](ontology.png)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://data.europa.eu/m8g/transform-validate-ontology"
